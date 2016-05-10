@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         contactModel = new ContactModel();
 
         ///Query
-        if(crud.getContactList() != null) {
+       // if(crud.getContactList() != null) {
             resultsshow = crud.getContactList();
             contactAdapter = new ContactAdapter();
 
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             });
-        }
+       // }
 
        /* for(ContactModel c:resultsshow) {
             Log.d("results1", c.getmName() + c.getmPhone() + " "+c.getmId());
